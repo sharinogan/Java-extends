@@ -14,8 +14,8 @@ class Start {
         // from the given array
         int result = 0;
         for (int i = 0; i < all.length; i++) {
-            if(all[i] instanceof Integer meow) {
-                result += meow;            
+            if(all[i] instanceof Integer) {
+                result += (Integer)all[i];            
             }
         }
          System.out.print(" " + result);
