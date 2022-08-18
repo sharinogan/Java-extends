@@ -10,7 +10,7 @@ class Start {
             new Player("Messi", 10, 43000.0),
             new Player("Peter", 1, 42000.0)
         };
-        Arrays.sort(all, new PlayerCompare());
+        Arrays.sort(all, (p, q) -> p.number - q.number);
         for (Player player : all) {
             System.out.println(player.name);
         }
